@@ -28,6 +28,17 @@ array $data dikirimkan ke view aute_header
  } else {
  $this->_login();
  }
+
+ public function blok()
+ {
+ $this->load->view('autentifikasi/blok');
+ }
+ public function gagal()
+ {
+ $this->load->view('autentifikasi/gagal');
+ }
+
+
  }
 private function _login()
  {
